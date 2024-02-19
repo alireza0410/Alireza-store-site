@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Bugeto_Store.Persistence.Contexts;
 using Bugeto_Store.Application.Interfaces.Contexts;
+using Bugeto_Store.Application.Services.Users.Queries.GetUsers;
 
 namespace EndPoint.Site
 {
@@ -28,6 +29,7 @@ namespace EndPoint.Site
         {
 
             services.AddScoped<IDataBaseContext, DataBaseContext>();
+            services.AddScoped<IGetUsersService, GetUsersService>();
 
             string contectionString = @"Data Source=.; Initial Catalog=AlirezaStoreDb; Integrated Security=True;";
             services.AddEntityFrameworkSqlServer().AddDbContext<DataBaseContext>(option => option.UseSqlServer(contectionString));

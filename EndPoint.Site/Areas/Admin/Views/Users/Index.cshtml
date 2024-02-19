@@ -1,8 +1,2355 @@
-﻿
+﻿@using Bugeto_Store.Application.Services.Users.Queries.GetUsers
+@model ReslutGetUserDto
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/Shared/_Adminlayout.cshtml";
 }
+<div class="content-wrapper">
+            <div class="container-fluid"><!-- Zero configuration table -->
+<section id="configuration">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-success">
+                        <h4 class="card-title">لیست کاربران</h4>
+                    </div>
+                </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                        <p class="card-text">داده های جداول اغلب ویژگی های پیش فرض را فعال می کنند، بنابراین همه چیزهایی که باید برای استفاده از آن با استفاده از ables خود انجام دهید، تماس با تابع ساخت است: $ (). DataTable ()؛</p>
+                        <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_0_length"><label>نمایش <select name="DataTables_Table_0_length" aria-controls="DataTables_Table_0" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> سطر</label></div></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_0_filter" class="dataTables_filter"><label>جستجو:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_0"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-striped table-bordered zero-configuration dataTable" id="DataTables_Table_0" role="grid" aria-describedby="DataTables_Table_0_info">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-sort="ascending" aria-label="نام: activate to sort column descending" style="width: 156.913px;">نام</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" aria-label="موقعیت: activate to sort column ascending" style="width: 292.775px;">موقعیت</th>
+</tr>                                   
+                            </thead>
+                            <tbody>
 
-<h1>Index</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            @foreach (var item in Model.u)
+                            {
+                                    <tr role="row" class="odd">
+                                    <td class="sorting_1">آرتین علیزاده</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>51</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                               
+                            </tr>
+                                                        
+                            }
+
+
+                           
+                            </tbody>
+                            <tfoot>
+                                <tr><th rowspan="1" colspan="1">نام</th><th rowspan="1" colspan="1">موقعیت</th><th rowspan="1" colspan="1">اداره</th><th rowspan="1" colspan="1">سن</th><th rowspan="1" colspan="1">تاریخ شروع</th><th rowspan="1" colspan="1">حقوق</th></tr>
+                            </tfoot>
+                        </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">نمایش 1 تا 10 از 57 سطرها</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">قبلی</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="DataTables_Table_0_next"><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="7" tabindex="0" class="page-link">بعدی</a></li></ul></div></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Zero configuration table -->
+<!-- Default ordering table -->
+<section id="ordering">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-warning">
+                        <h4 class="card-title">سفارش پیش فرض</h4>
+                    </div>
+                </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                        <p class="card-text">بگذارید بگوییم میخواهید ستون چهارم (3) نزولی را مرتب کنید و ستون اول (0) صعودی: سفارش شما: به نظر می رسد: سفارش: [[3، 'desc']، [0، 'asc']]</p>
+                        <div id="DataTables_Table_1_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_1_length"><label>نمایش <select name="DataTables_Table_1_length" aria-controls="DataTables_Table_1" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> سطر</label></div></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_1_filter" class="dataTables_filter"><label>جستجو:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_1"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-striped table-bordered default-ordering dataTable" id="DataTables_Table_1" role="grid" aria-describedby="DataTables_Table_1_info">
+                            <thead>
+                                <tr role="row"><th class="sorting" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="نام: activate to sort column ascending" style="width: 156.913px;">نام</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="موقعیت: activate to sort column ascending" style="width: 292.775px;">موقعیت</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="اداره: activate to sort column ascending" style="width: 104.525px;">اداره</th><th class="sorting_desc" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-sort="descending" aria-label="سن: activate to sort column ascending" style="width: 56.7625px;">سن</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="تاریخ شروع: activate to sort column ascending" style="width: 118.613px;">تاریخ شروع</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" aria-label="حقوق: activate to sort column ascending" style="width: 132.812px;">حقوق</th></tr>
+                            </thead>
+                            <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <tr role="row" class="odd">
+                                    <td>فاطمه خانی</td>
+                                    <td>نویسنده فنی جوان</td>
+                                    <td>روزنامه جوان</td>
+                                    <td class="sorting_1">66</td>
+                                    <td>12/01/97</td>
+                                    <td>86،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td>سینا عرب</td>
+                                    <td>طراح بازاریابی</td>
+                                    <td>ایده پردازان</td>
+                                    <td class="sorting_1">66</td>
+                                   <td>09/06/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td>کبری چمنی</td>
+                                    <td>کارگردان</td>
+                                    <td>ایده پرداز</td>
+                                    <td class="sorting_1">65</td>
+                                    <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td>محمد محمدی</td>
+                                    <td>مدیر ارشد مالی</td>
+                                    <td>ایده پرداز</td>
+                                    <td class="sorting_1">64</td>
+                                    <td>09/06/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td>لیدا کبیری</td>
+                                    <td>مهندس پشتیبانی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td class="sorting_1">64</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td>علی نگهبان</td>
+                                    <td>هماهنگ کننده داده ها</td>
+                                    <td>روزنامه جوان</td>
+                                    <td class="sorting_1">64</td>
+                                    <td>17/05/95</td>
+                                   <td>145،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td>احمد احمدی</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td class="sorting_1">63</td>
+                                    <td>25/07/97</td>
+                                    <td>170،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td>پوران مفتخر</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پرداز</td>
+                                    <td class="sorting_1">63</td>
+                                    <td>23/05/95</td>
+                                    <td>145،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td>حسن معجونی</td>
+                                    <td>کنترل مالی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td class="sorting_1">62</td>
+                                   <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td>علی رضایی</td>
+                                    <td>معمار سیستم</td>
+                                    <td>ایده پرداز</td>
+                                    <td class="sorting_1">61</td>
+                                    <td>25/04/97</td>
+                                    <td>320،800 تومان</td>
+                                </tr></tbody>
+                            <tfoot>
+                                <tr><th rowspan="1" colspan="1">نام</th><th rowspan="1" colspan="1">موقعیت</th><th rowspan="1" colspan="1">اداره</th><th rowspan="1" colspan="1">سن</th><th rowspan="1" colspan="1">تاریخ شروع</th><th rowspan="1" colspan="1">حقوق</th></tr>
+                            </tfoot>
+                        </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_1_info" role="status" aria-live="polite">نمایش 1 تا 10 از 57 سطرها</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_1_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_1_previous"><a href="#" aria-controls="DataTables_Table_1" data-dt-idx="0" tabindex="0" class="page-link">قبلی</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_1" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_1" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_1" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_1" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_1" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_1" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="DataTables_Table_1_next"><a href="#" aria-controls="DataTables_Table_1" data-dt-idx="7" tabindex="0" class="page-link">بعدی</a></li></ul></div></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Default ordering table -->
+<!-- Multi-column ordering table -->
+<section id="multi-column">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-info">
+                        <h4 class="card-title">سفارش چند ستون</h4>
+                    </div>
+                </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                        <p class="card-text">جداول داده اجازه می دهد تا سفارش های چندین ستون در یک زمان، که می تواند در تعدادی از روش های مختلف فعال شود</p>
+                        <div id="DataTables_Table_2_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_2_length"><label>نمایش <select name="DataTables_Table_2_length" aria-controls="DataTables_Table_2" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> سطر</label></div></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_2_filter" class="dataTables_filter"><label>جستجو:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_2"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-striped table-bordered multi-ordering dataTable no-footer" id="DataTables_Table_2" role="grid" aria-describedby="DataTables_Table_2_info">
+                            <thead>
+                                <tr role="row">
+                                    <th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_2" rowspan="1" colspan="1" aria-sort="ascending" aria-label="نام: activate to sort column descending" style="width: 105.738px;">نام</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_2" rowspan="1" colspan="1" aria-label="نام خانوادگی: activate to sort column ascending" style="width: 167.275px;">نام خانوادگی</th>
+                                    <th class="sorting" tabindex="0" aria-controls="DataTables_Table_2" rowspan="1" colspan="1" aria-label="موقعیت: activate to sort column ascending" style="width: 345.663px;">موقعیت</th>
+                            </thead>
+                            <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                         @foreach (var item in Model.Users)
+                                         {
+                                                 <tr role="row" class="odd">
+                                                  <td class="sorting_1">@item.FullName</td>
+                                                  <td>@item.Email</td>
+                                                 
+                                                  <td>
+                                                      <button class="btn btn-info">ویرایش</button> 
+                                                      <button class="btn btn-danger">حذف</button> 
+                                                      <button class="btn btn-warning">غیرفعال</button> 
+                                                    
+                                                  </td>
+                               
+                                                 </tr>
+                                                        
+                                         }
+
+
+
+
+
+
+
+                        
+                            </tbody>
+                        </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_2_info" role="status" aria-live="polite">نمایش 1 تا 10 از 57 سطرها</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_2_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_2_previous"><a href="#" aria-controls="DataTables_Table_2" data-dt-idx="0" tabindex="0" class="page-link">قبلی</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_2" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_2" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_2" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_2" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_2" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_2" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="DataTables_Table_2_next"><a href="#" aria-controls="DataTables_Table_2" data-dt-idx="7" tabindex="0" class="page-link">بعدی</a></li></ul></div></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Multi-column ordering table -->
+<!-- Complex headers table -->
+<section id="headers">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-danger">
+                        <h4 class="card-title">هدرهای پیچیده</h4>
+                    </div>
+                </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                        <p class="card-text">هنگام استفاده از جداول برای نمایش داده ها، اغلب مایل به نمایش اطلاعات ستون در گروه ها خواهید بود. جداول داده ها به طور کامل از colspan و rowspan در header جدول پشتیبانی می کنند، وظیفه شنوندگان نظم مورد نیاز را به عنصر TH مناسب برای آن ستون.</p>
+                        <div id="DataTables_Table_3_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_3_length"><label>نمایش <select name="DataTables_Table_3_length" aria-controls="DataTables_Table_3" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> سطر</label></div></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_3_filter" class="dataTables_filter"><label>جستجو:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_3"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-striped table-bordered complex-headers dataTable" id="DataTables_Table_3" role="grid" aria-describedby="DataTables_Table_3_info" style="width: 1122px;">
+                            <thead>
+                                <tr role="row"><th rowspan="2" class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_3" colspan="1" aria-sort="ascending" aria-label="نام: activate to sort column descending" style="width: 135.2px;">نام</th><th colspan="2" rowspan="1">اطلاعات منابع انسانی</th><th colspan="3" rowspan="1">تماس</th></tr>
+                                <tr role="row"><th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1" colspan="1" aria-label="موقعیت: activate to sort column ascending" style="width: 256.2px;">موقعیت</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1" colspan="1" aria-label="حقوق: activate to sort column ascending" style="width: 114.2px;">حقوق</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1" colspan="1" aria-label="اداره: activate to sort column ascending" style="width: 89.2px;">اداره</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1" colspan="1" aria-label="شماره: activate to sort column ascending" style="width: 63.2px;">شماره</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_3" rowspan="1" colspan="1" aria-label="ایمیل: activate to sort column ascending" style="width: 208px;">ایمیل</th></tr>
+                            </thead>
+                            <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <tr role="row" class="odd">
+                                    <td class="sorting_1">آرتین علیزاده</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>164،500 تومان</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>7031</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">احمد احمدی</td>
+                                    <td>حسابدار</td>
+                                    <td>170،750 تومان</td>
+                                    <td>سونی</td>
+                                    <td>8422</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">احمد وزیری</td>
+                                    <td>مدیر اجرایی (مدیر عامل)</td>
+                                    <td>163،000 تومان</td>
+                                    <td>ایده پردازان</td>
+                                    <td>5797</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">تینا زینلی</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>87،500 تومان</td>
+                                    <td>ایده پرداز</td>
+                                    <td>8327</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">حسن معجونی</td>
+                                    <td>کنترل مالی</td>
+                                    <td>645،750 تومان</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>9422</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">حمید زمانی</td>
+                                    <td>معاون فروش</td>
+                                    <td>103،600 تومان</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>9608</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">خسرو غفاری</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>385،750 تومان</td>
+                                    <td>ایده پردازان</td>
+                                    <td>1965</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمدی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>86،500 تومان</td>
+                                    <td>ایده پردازان</td>
+                                    <td>1016</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>نویسنده فنی</td>
+                                    <td>164،500 تومان</td>
+                                    <td>ایده پردازان</td>
+                                    <td>3606</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>87،500 تومان</td>
+                                    <td>ایده پردازان</td>
+                                    <td>6222</td>
+                                   <td>fkazemi5236@gmail.com</td>
+                                </tr></tbody>
+                            <tfoot>
+                                <tr><th rowspan="1" colspan="1">نام</th><th rowspan="1" colspan="1">موقعیت</th><th rowspan="1" colspan="1">حقوق</th><th rowspan="1" colspan="1">اداره</th><th rowspan="1" colspan="1">شماره</th><th rowspan="1" colspan="1">ایمیل</th></tr>
+                            </tfoot>
+                        </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_3_info" role="status" aria-live="polite">نمایش 1 تا 10 از 57 سطرها</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_3_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_3_previous"><a href="#" aria-controls="DataTables_Table_3" data-dt-idx="0" tabindex="0" class="page-link">قبلی</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_3" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_3" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_3" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_3" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_3" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_3" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="DataTables_Table_3_next"><a href="#" aria-controls="DataTables_Table_3" data-dt-idx="7" tabindex="0" class="page-link">بعدی</a></li></ul></div></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Complex headers table -->
+<!-- DOM positioning table -->
+<section id="positioning">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-primary">
+                        <h4 class="card-title">موقعیت DOM</h4>
+                    </div>
+                </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                        <p class="card-text">هنگام سفارشی کردن جداول داده ها برای استفاده خودتان ممکن است متوجه شوید که موقعیت پیش فرض عناصر ویژگی (فیلتر ورودی و غیره) کاملا به نفع شما نیست. برای مقابله با این مسئله، جداول داده الهام می گیرند از ماژول طرح بندی پیشرفته CSS 3 و پارامتر مقداردهی اولیه دام را فراهم می کند که می تواند تعیین کند که کدام ویژگی های خاصی در DOM ظاهر می شود. شما همچنین می توانید ظروف پلاستیکی بسته بندی (با شناسه و / یا کلاس) را برای ارائه انعطاف پذیری طرح کامل مشخص کنید.</p>
+                        <div id="DataTables_Table_4_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4"><div class="top"><div class="dataTables_info" id="DataTables_Table_4_info" role="status" aria-live="polite">نمایش 1 تا 10 از 57 سطرها</div></div><table class="table table-striped table-bordered dom-positioning dataTable" id="DataTables_Table_4" aria-describedby="DataTables_Table_4_info" role="grid">
+                            <thead>
+                                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_4" rowspan="1" colspan="1" aria-sort="ascending" aria-label="نام: activate to sort column descending" style="width: 156.913px;">نام</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_4" rowspan="1" colspan="1" aria-label="موقعیت: activate to sort column ascending" style="width: 292.775px;">موقعیت</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_4" rowspan="1" colspan="1" aria-label="اداره: activate to sort column ascending" style="width: 104.525px;">اداره</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_4" rowspan="1" colspan="1" aria-label="سن: activate to sort column ascending" style="width: 56.7625px;">سن</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_4" rowspan="1" colspan="1" aria-label="تاریخ شروع: activate to sort column ascending" style="width: 118.613px;">تاریخ شروع</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_4" rowspan="1" colspan="1" aria-label="حقوق: activate to sort column ascending" style="width: 132.812px;">حقوق</th></tr>
+                            </thead>
+                            <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <tr role="row" class="odd">
+                                    <td class="sorting_1">آرتین علیزاده</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>51</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">احمد احمدی</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td>63</td>
+                                    <td>25/07/97</td>
+                                    <td>170،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">احمد وزیری</td>
+                                    <td>مدیر اجرایی (مدیر عامل)</td>
+                                    <td>ایده پردازان</td>
+                                    <td>47</td>
+                                    <td>12/08/97</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">تینا زینلی</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>ایده پرداز</td>
+                                    <td>61</td>
+                                    <td>17/05/95</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">حسن معجونی</td>
+                                    <td>کنترل مالی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>62</td>
+                                   <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">حمید زمانی</td>
+                                    <td>معاون فروش</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>59</td>
+                                    <td>02/12/97</td>
+                                    <td>103،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">خسرو غفاری</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پردازان</td>
+                                    <td>19</td>
+                                   <td>09/06/97</td>
+                                    <td>385،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمدی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پردازان</td>
+                                    <td>47</td>
+                                    <td>23/05/95</td>
+                                    <td>86،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>نویسنده فنی</td>
+                                    <td>ایده پردازان</td>
+                                    <td>27</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پردازان</td>
+                                    <td>38</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                </tr></tbody>
+                            <tfoot>
+                                <tr><th rowspan="1" colspan="1">نام</th><th rowspan="1" colspan="1">موقعیت</th><th rowspan="1" colspan="1">اداره</th><th rowspan="1" colspan="1">سن</th><th rowspan="1" colspan="1">تاریخ شروع</th><th rowspan="1" colspan="1">حقوق</th></tr>
+                            </tfoot>
+                        </table><div class="bottom"><div id="DataTables_Table_4_filter" class="dataTables_filter"><label>جستجو:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_4"></label></div><div class="dataTables_length" id="DataTables_Table_4_length"><label>نمایش <select name="DataTables_Table_4_length" aria-controls="DataTables_Table_4" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> سطر</label></div><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_4_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_4_previous"><a href="#" aria-controls="DataTables_Table_4" data-dt-idx="0" tabindex="0" class="page-link">قبلی</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_4" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_4" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_4" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_4" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_4" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_4" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="DataTables_Table_4_next"><a href="#" aria-controls="DataTables_Table_4" data-dt-idx="7" tabindex="0" class="page-link">بعدی</a></li></ul></div></div><div class="clear"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ DOM positioning table -->
+<!-- Alternative pagination table -->
+<section id="pagination">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-success">
+                        <h4 class="card-title">صفحه بندی جایگزین</h4>
+                    </div>
+                </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                        <p class="card-text">کنترل صفحه پیش فرض ارائه شده توسط جداول داده (دکمه های جلو و عقب تا 7 عدد در میان) برای بسیاری از موارد خوب است، اما مواردی وجود دارد که ممکن است بخواهید گزینه های ارائه شده به کاربر نهایی را سفارشی کنید. این کار از طریق مکانیزم پیمایش ابزاری جداول داده ها، گزینه نوع پیمایش انجام می شود.</p>
+                        <div id="DataTables_Table_5_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_5_length"><label>نمایش <select name="DataTables_Table_5_length" aria-controls="DataTables_Table_5" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> سطر</label></div></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_5_filter" class="dataTables_filter"><label>جستجو:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_5"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-striped table-bordered alt-pagination dataTable" id="DataTables_Table_5" role="grid" aria-describedby="DataTables_Table_5_info">
+                            <thead>
+                                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_5" rowspan="1" colspan="1" aria-sort="ascending" aria-label="نام: activate to sort column descending" style="width: 156.913px;">نام</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_5" rowspan="1" colspan="1" aria-label="موقعیت: activate to sort column ascending" style="width: 292.775px;">موقعیت</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_5" rowspan="1" colspan="1" aria-label="اداره: activate to sort column ascending" style="width: 104.525px;">اداره</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_5" rowspan="1" colspan="1" aria-label="سن: activate to sort column ascending" style="width: 56.7625px;">سن</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_5" rowspan="1" colspan="1" aria-label="تاریخ شروع: activate to sort column ascending" style="width: 118.613px;">تاریخ شروع</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_5" rowspan="1" colspan="1" aria-label="حقوق: activate to sort column ascending" style="width: 132.812px;">حقوق</th></tr>
+                            </thead>
+                            <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <tr role="row" class="odd">
+                                    <td class="sorting_1">آرتین علیزاده</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>51</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">احمد احمدی</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td>63</td>
+                                    <td>25/07/97</td>
+                                    <td>170،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">احمد وزیری</td>
+                                    <td>مدیر اجرایی (مدیر عامل)</td>
+                                    <td>ایده پردازان</td>
+                                    <td>47</td>
+                                    <td>12/08/97</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">تینا زینلی</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>ایده پرداز</td>
+                                    <td>61</td>
+                                    <td>17/05/95</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">حسن معجونی</td>
+                                    <td>کنترل مالی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>62</td>
+                                   <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">حمید زمانی</td>
+                                    <td>معاون فروش</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>59</td>
+                                    <td>02/12/97</td>
+                                    <td>103،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">خسرو غفاری</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پردازان</td>
+                                    <td>19</td>
+                                   <td>09/06/97</td>
+                                    <td>385،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمدی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پردازان</td>
+                                    <td>47</td>
+                                    <td>23/05/95</td>
+                                    <td>86،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>نویسنده فنی</td>
+                                    <td>ایده پردازان</td>
+                                    <td>27</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پردازان</td>
+                                    <td>38</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                </tr></tbody>
+                            <tfoot>
+                                <tr><th rowspan="1" colspan="1">نام</th><th rowspan="1" colspan="1">موقعیت</th><th rowspan="1" colspan="1">اداره</th><th rowspan="1" colspan="1">سن</th><th rowspan="1" colspan="1">تاریخ شروع</th><th rowspan="1" colspan="1">حقوق</th></tr>
+                            </tfoot>
+                        </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_5_info" role="status" aria-live="polite">نمایش 1 تا 10 از 57 سطرها</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_full_numbers" id="DataTables_Table_5_paginate"><ul class="pagination"><li class="paginate_button page-item first disabled" id="DataTables_Table_5_first"><a href="#" aria-controls="DataTables_Table_5" data-dt-idx="0" tabindex="0" class="page-link">اولین</a></li><li class="paginate_button page-item previous disabled" id="DataTables_Table_5_previous"><a href="#" aria-controls="DataTables_Table_5" data-dt-idx="1" tabindex="0" class="page-link">قبلی</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_5" data-dt-idx="2" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_5" data-dt-idx="3" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_5" data-dt-idx="4" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_5" data-dt-idx="5" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_5" data-dt-idx="6" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_5" data-dt-idx="7" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="DataTables_Table_5_next"><a href="#" aria-controls="DataTables_Table_5" data-dt-idx="8" tabindex="0" class="page-link">بعدی</a></li><li class="paginate_button page-item last" id="DataTables_Table_5_last"><a href="#" aria-controls="DataTables_Table_5" data-dt-idx="9" tabindex="0" class="page-link">آخرین</a></li></ul></div></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Alternative pagination table -->
+<!-- Scroll - vertical table -->
+<section id="scroll">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-warning">
+                        <h4 class="card-title">حرکت - عمودی</h4>
+                    </div>
+                </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                        <p class="card-text">در این مثال پیمایش جدول جدول داده ها در جهت عمودی نشان داده می شود. این به طور کلی می تواند به عنوان یک روش جایگزین برای صفحه بندی برای نمایش یک جدول بزرگ در یک منطقه عمودی کوچک به نظر می رسد و به همین ترتیب صفحه بندی در اینجا غیر فعال شده است (توجه داشته باشید که این اجباری نیست، این کار فقط با صفحه بندی فعال نیز کار می کند! )</p>
+                        <div id="DataTables_Table_6_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_6_filter" class="dataTables_filter"><label>جستجو:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_6"></label></div></div></div><div class="row"><div class="col-sm-12"><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 1114.4px; padding-left: 17px;"><table class="table table-striped table-bordered scroll-vertical dataTable" role="grid" style="margin-left: 0px; width: 1114.4px;"><thead>
+                                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 153.387px;" aria-sort="ascending" aria-label="نام: activate to sort column descending">نام</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 286.562px;" aria-label="موقعیت: activate to sort column ascending">موقعیت</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 102.65px;" aria-label="اداره: activate to sort column ascending">اداره</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 55.95px;" aria-label="سن: activate to sort column ascending">سن</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 116.7px;" aria-label="تاریخ شروع: activate to sort column ascending">تاریخ شروع</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 130.35px;" aria-label="حقوق: activate to sort column ascending">حقوق</th></tr>
+                            </thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; max-height: 200px; width: 100%;"><table class="table table-striped table-bordered scroll-vertical dataTable" id="DataTables_Table_6" role="grid" aria-describedby="DataTables_Table_6_info" style="width: 100%;"><thead>
+                                <tr role="row" style="height: 0px;"><th class="sorting" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 153.387px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">نام</div></th><th class="sorting" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 286.562px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">موقعیت</div></th><th class="sorting" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 102.65px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">اداره</div></th><th class="sorting" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 55.95px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">سن</div></th><th class="sorting" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 116.7px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">تاریخ شروع</div></th><th class="sorting" aria-controls="DataTables_Table_6" rowspan="1" colspan="1" style="width: 130.35px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">حقوق</div></th></tr>
+                            </thead><tfoot>
+                                <tr style="height: 0px;"><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 171.387px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">نام</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 304.562px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">موقعیت</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 120.65px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">اداره</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 73.95px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">سن</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 134.7px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">تاریخ شروع</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 148.35px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">حقوق</div></th></tr>
+                            </tfoot>
+
+                            <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <tr role="row" class="odd">
+                                    <td class="sorting_1">آرتین علیزاده</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>51</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">احمد احمدی</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td>63</td>
+                                    <td>25/07/97</td>
+                                    <td>170،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">احمد وزیری</td>
+                                    <td>مدیر اجرایی (مدیر عامل)</td>
+                                    <td>ایده پردازان</td>
+                                    <td>47</td>
+                                    <td>12/08/97</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">تینا زینلی</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>ایده پرداز</td>
+                                    <td>61</td>
+                                    <td>17/05/95</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">حسن معجونی</td>
+                                    <td>کنترل مالی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>62</td>
+                                   <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">حمید زمانی</td>
+                                    <td>معاون فروش</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>59</td>
+                                    <td>02/12/97</td>
+                                    <td>103،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">خسرو غفاری</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پردازان</td>
+                                    <td>19</td>
+                                   <td>09/06/97</td>
+                                    <td>385،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمدی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پردازان</td>
+                                    <td>47</td>
+                                    <td>23/05/95</td>
+                                    <td>86،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>نویسنده فنی</td>
+                                    <td>ایده پردازان</td>
+                                    <td>27</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پردازان</td>
+                                    <td>38</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">رها ناصری</td>
+                                    <td>متخصص ادغام</td>
+                                    <td>سونی</td>
+                                    <td>55</td>
+                                    <td>02/12/97</td>
+                                    <td>103،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">ریما امیری</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>ایده پردازان</td>
+                                    <td>37</td>
+                                    <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">زهرا مطهری</td>
+                                    <td>بازاریابی منطقه ای</td>
+                                    <td>سونی</td>
+                                    <td>20</td>
+                                    <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">زیبا رئیسی</td>
+                                    <td>پرسنل وب</td>
+                                    <td>ایده پرداز</td>
+                                    <td>35</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">زیبا ناصری</td>
+                                    <td>متخصص ادغام</td>
+                                    <td>ایده پرداز</td>
+                                    <td>61</td>
+                                    <td>02/12/97</td>
+                                    <td>372،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">سعید کیانی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>36</td>
+                                    <td>09/10/97</td>
+                                    <td>385،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">سهیل عمویی</td>
+                                    <td>مهندس پشتیبانی</td>
+                                    <td>سونی</td>
+                                    <td>37</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">سهیلا زینلی</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>30</td>
+                                    <td>23/05/95</td>
+                                    <td>86،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">سونیا راد</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پرداز</td>
+                                    <td>23</td>
+                                    <td>02/10/97</td>
+                                    <td>103،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">سینا زاهدی</td>
+                                    <td>توسعه دهنده جاوا اسکریپت ارشد</td>
+                                    <td>ایده پرداز</td>
+                                    <td>22</td>
+                                    <td>29/03/97</td>
+                                    <td>433،060 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">سینا عرب</td>
+                                    <td>طراح بازاریابی</td>
+                                    <td>ایده پردازان</td>
+                                    <td>66</td>
+                                   <td>09/06/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">عباس کیانی</td>
+                                    <td>معاون فروش</td>
+                                    <td>برق</td>
+                                    <td>23</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">علی اصغری</td>
+                                    <td>مدیر سیستم</td>
+                                    <td>ایده پردازان</td>
+                                    <td>21</td>
+                                    <td>23/05/95</td>
+                                   <td>86،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">علی رضایی</td>
+                                    <td>معمار سیستم</td>
+                                    <td>ایده پرداز</td>
+                                    <td>61</td>
+                                    <td>25/04/97</td>
+                                    <td>320،800 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">علی صبوری</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td>33</td>
+                                    <td>28/11/97</td>
+                                    <td>162،700 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">علی صبوری</td>
+                                    <td>پشتیبانی پس از فروش</td>
+                                    <td>ایده پرداز</td>
+                                    <td>46</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">علی نگهبان</td>
+                                    <td>هماهنگ کننده داده ها</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>64</td>
+                                    <td>17/05/95</td>
+                                   <td>145،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">علیرضا غفاری</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>56</td>
+                                    <td>23/05/95</td>
+                                    <td>145،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">غزاله حجتی</td>
+                                    <td>مدیر عامل</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>48</td>
+                                    <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">فائزه معتمدی</td>
+                                    <td>طراح ارشد بازاریابی</td>
+                                    <td>ایده پردازان</td>
+                                    <td>43</td>
+                                   <td>09/10/97</td>
+                                    <td>385،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">فاطمه حسینی</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>ایده پردازان</td>
+                                    <td>30</td>
+                                    <td>02/10/97</td>
+                                    <td>385،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">فاطمه خانی</td>
+                                    <td>نویسنده فنی جوان</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>66</td>
+                                    <td>12/01/97</td>
+                                    <td>86،000 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">فاطمه زالی</td>
+                                    <td>معاون فروش</td>
+                                    <td>ایده پرداز</td>
+                                    <td>46</td>
+                                    <td>23/05/95</td>
+                                    <td>145،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">فریبا خانی</td>
+                                    <td>پشتیبانی وب</td>
+                                    <td>ایده پرداز</td>
+                                    <td>22</td>
+                                    <td>09/10/97</td>
+                                   <td>385،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">لیدا کبیری</td>
+                                    <td>مهندس پشتیبانی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>64</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">مائده مولایی</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پردازان</td>
+                                    <td>41</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">محسن پناهی</td>
+                                    <td>توسعه دهنده جاوااسکریپت</td>
+                                    <td>ایده پرداز</td>
+                                    <td>43</td>
+                                    <td>23/05/95</td>
+                                   <td>145،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">محمد محمدی</td>
+                                    <td>مدیر ارشد مالی</td>
+                                    <td>ایده پرداز</td>
+                                    <td>64</td>
+                                    <td>09/06/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">مسعود جهانی</td>
+                                    <td>طراح بازاریابی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>47</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">مسعود حیدری</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>28</td>
+                                   <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">مسعود ملاحسینی</td>
+                                    <td>توسعه دهنده وب</td>
+                                    <td>ایده پرداز</td>
+                                    <td>30</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">مطهره لولو</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>ایده پردازان</td>
+                                    <td>53</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">معصومه غلامی</td>
+                                    <td>مدیر سیستم</td>
+                                    <td>ایده پرداز</td>
+                                    <td>59</td>
+                                    <td>09/06/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">مهدی یراحی</td>
+                                    <td>تیم وب</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>22</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">مینا شجری</td>
+                                    <td>متخصص ادغام</td>
+                                    <td>برق</td>
+                                    <td>37</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">مینا شجری</td>
+                                    <td>پشتیبان مشتری</td>
+                                    <td>ایده پرداز</td>
+                                    <td>27</td>
+                                    <td>25/01/97</td>
+                                    <td>112،000 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">هاله بابایی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پرداز</td>
+                                    <td>51</td>
+                                    <td>23/05/95</td>
+                                    <td>112،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">پناه حسنی</td>
+                                    <td>دبیر</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>41</td>
+                                   <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">پوران مفتخر</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پرداز</td>
+                                    <td>63</td>
+                                    <td>23/05/95</td>
+                                    <td>145،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">کاظم یعقوبی</td>
+                                    <td>مهندس پشتیبانی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>47</td>
+                                   <td>17/05/95</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">کامران احمدی</td>
+                                    <td>توسعه دهنده جاوااسکریپت</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>39</td>
+                                    <td>02/10/97</td>
+                                   <td>103،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">کبری چمنی</td>
+                                    <td>کارگردان</td>
+                                    <td>ایده پرداز</td>
+                                    <td>65</td>
+                                    <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">کوروش حسینی</td>
+                                    <td>پشتیبانی پیش فروش</td>
+                                    <td>ایده پرداز</td>
+                                    <td>21</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">کوروش زمانی</td>
+                                    <td>توسعه دهنده جاوااسکریپت</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>29</td>
+                                    <td>27/06/95</td>
+                                    <td>112،000 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">کیمیا سعیدی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>28</td>
+                                    <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">گیتی خانی</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>ایده پرداز</td>
+                                    <td>42</td>
+                                    <td>12/08/97</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">یاسر خیابانی</td>
+                                    <td>افسر ارشد بازاریابی</td>
+                                    <td>ایده پرداز</td>
+                                    <td>40</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr></tbody>
+
+                        </table></div><div class="dataTables_scrollFoot" style="overflow: hidden; border: 0px; width: 100%;"><div class="dataTables_scrollFootInner" style="width: 1114.4px; padding-left: 17px;"><table class="table table-striped table-bordered scroll-vertical dataTable" role="grid" style="margin-left: 0px; width: 1114.4px;"><tfoot>
+                                <tr><th rowspan="1" colspan="1" style="width: 171.387px;">نام</th><th rowspan="1" colspan="1" style="width: 304.562px;">موقعیت</th><th rowspan="1" colspan="1" style="width: 120.65px;">اداره</th><th rowspan="1" colspan="1" style="width: 73.95px;">سن</th><th rowspan="1" colspan="1" style="width: 134.7px;">تاریخ شروع</th><th rowspan="1" colspan="1" style="width: 148.35px;">حقوق</th></tr>
+                            </tfoot></table></div></div></div></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_6_info" role="status" aria-live="polite">نمایش 1 تا 57 از 57 سطرها</div></div><div class="col-sm-12 col-md-7"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Scroll - vertical table -->
+<!-- Scroll - vertical, dynamic height table -->
+<section id="scroll-dynamic">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-info">
+                        <h4 class="card-title">پیمایش - عمودی، ارتفاع پویا</h4>
+                    </div>
+                </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                        <p class="card-text">این مثال یک جدول اطلاعات پیمایش عمودی را نشان می دهد که از واحد CSS3 (vh) استفاده می کند تا به صورت پویا بر اساس ارتفاع پنجره مرورگر تغییر اندازه ظاهر شود. واحد (vh) به طور موثر یک درصد از ارتفاع پنجره مرورگر است. بنابراین (50vh) مورد استفاده در این مثال 50٪ از ارتفاع پنجره است. اندازه پنجره نمایش به صورت پویا به صورت پنجره تغییر اندازه داده می شود.</p>
+                        <div id="DataTables_Table_7_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_7_filter" class="dataTables_filter"><label>جستجو:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_7"></label></div></div></div><div class="row"><div class="col-sm-12"><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 1114.4px; padding-left: 17px;"><table class="table table-striped table-bordered dynamic-height dataTable" role="grid" style="margin-left: 0px; width: 1114.4px;"><thead>
+                                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 153.387px;" aria-sort="ascending" aria-label="نام: activate to sort column descending">نام</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 286.562px;" aria-label="موقعیت: activate to sort column ascending">موقعیت</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 102.65px;" aria-label="اداره: activate to sort column ascending">اداره</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 55.95px;" aria-label="سن: activate to sort column ascending">سن</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 116.7px;" aria-label="تاریخ شروع: activate to sort column ascending">تاریخ شروع</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 130.35px;" aria-label="حقوق: activate to sort column ascending">حقوق</th></tr>
+                            </thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; max-height: 50vh; width: 100%;"><table class="table table-striped table-bordered dynamic-height dataTable" id="DataTables_Table_7" role="grid" aria-describedby="DataTables_Table_7_info" style="width: 100%;"><thead>
+                                <tr role="row" style="height: 0px;"><th class="sorting" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 153.387px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">نام</div></th><th class="sorting" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 286.562px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">موقعیت</div></th><th class="sorting" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 102.65px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">اداره</div></th><th class="sorting" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 55.95px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">سن</div></th><th class="sorting" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 116.7px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">تاریخ شروع</div></th><th class="sorting" aria-controls="DataTables_Table_7" rowspan="1" colspan="1" style="width: 130.35px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">حقوق</div></th></tr>
+                            </thead><tfoot>
+                                <tr style="height: 0px;"><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 171.387px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">نام</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 304.562px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">موقعیت</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 120.65px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">اداره</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 73.95px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">سن</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 134.7px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">تاریخ شروع</div></th><th rowspan="1" colspan="1" style="padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px; width: 148.35px;"><div class="dataTables_sizing" style="height:0;overflow:hidden;">حقوق</div></th></tr>
+                            </tfoot>
+
+                            <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <tr role="row" class="odd">
+                                    <td class="sorting_1">آرتین علیزاده</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>51</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">احمد احمدی</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td>63</td>
+                                    <td>25/07/97</td>
+                                    <td>170،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">احمد وزیری</td>
+                                    <td>مدیر اجرایی (مدیر عامل)</td>
+                                    <td>ایده پردازان</td>
+                                    <td>47</td>
+                                    <td>12/08/97</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">تینا زینلی</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>ایده پرداز</td>
+                                    <td>61</td>
+                                    <td>17/05/95</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">حسن معجونی</td>
+                                    <td>کنترل مالی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>62</td>
+                                   <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">حمید زمانی</td>
+                                    <td>معاون فروش</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>59</td>
+                                    <td>02/12/97</td>
+                                    <td>103،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">خسرو غفاری</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پردازان</td>
+                                    <td>19</td>
+                                   <td>09/06/97</td>
+                                    <td>385،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمدی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پردازان</td>
+                                    <td>47</td>
+                                    <td>23/05/95</td>
+                                    <td>86،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>نویسنده فنی</td>
+                                    <td>ایده پردازان</td>
+                                    <td>27</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پردازان</td>
+                                    <td>38</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">رها ناصری</td>
+                                    <td>متخصص ادغام</td>
+                                    <td>سونی</td>
+                                    <td>55</td>
+                                    <td>02/12/97</td>
+                                    <td>103،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">ریما امیری</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>ایده پردازان</td>
+                                    <td>37</td>
+                                    <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">زهرا مطهری</td>
+                                    <td>بازاریابی منطقه ای</td>
+                                    <td>سونی</td>
+                                    <td>20</td>
+                                    <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">زیبا رئیسی</td>
+                                    <td>پرسنل وب</td>
+                                    <td>ایده پرداز</td>
+                                    <td>35</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">زیبا ناصری</td>
+                                    <td>متخصص ادغام</td>
+                                    <td>ایده پرداز</td>
+                                    <td>61</td>
+                                    <td>02/12/97</td>
+                                    <td>372،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">سعید کیانی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>36</td>
+                                    <td>09/10/97</td>
+                                    <td>385،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">سهیل عمویی</td>
+                                    <td>مهندس پشتیبانی</td>
+                                    <td>سونی</td>
+                                    <td>37</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">سهیلا زینلی</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>30</td>
+                                    <td>23/05/95</td>
+                                    <td>86،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">سونیا راد</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پرداز</td>
+                                    <td>23</td>
+                                    <td>02/10/97</td>
+                                    <td>103،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">سینا زاهدی</td>
+                                    <td>توسعه دهنده جاوا اسکریپت ارشد</td>
+                                    <td>ایده پرداز</td>
+                                    <td>22</td>
+                                    <td>29/03/97</td>
+                                    <td>433،060 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">سینا عرب</td>
+                                    <td>طراح بازاریابی</td>
+                                    <td>ایده پردازان</td>
+                                    <td>66</td>
+                                   <td>09/06/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">عباس کیانی</td>
+                                    <td>معاون فروش</td>
+                                    <td>برق</td>
+                                    <td>23</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">علی اصغری</td>
+                                    <td>مدیر سیستم</td>
+                                    <td>ایده پردازان</td>
+                                    <td>21</td>
+                                    <td>23/05/95</td>
+                                   <td>86،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">علی رضایی</td>
+                                    <td>معمار سیستم</td>
+                                    <td>ایده پرداز</td>
+                                    <td>61</td>
+                                    <td>25/04/97</td>
+                                    <td>320،800 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">علی صبوری</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td>33</td>
+                                    <td>28/11/97</td>
+                                    <td>162،700 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">علی صبوری</td>
+                                    <td>پشتیبانی پس از فروش</td>
+                                    <td>ایده پرداز</td>
+                                    <td>46</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">علی نگهبان</td>
+                                    <td>هماهنگ کننده داده ها</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>64</td>
+                                    <td>17/05/95</td>
+                                   <td>145،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">علیرضا غفاری</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>56</td>
+                                    <td>23/05/95</td>
+                                    <td>145،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">غزاله حجتی</td>
+                                    <td>مدیر عامل</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>48</td>
+                                    <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">فائزه معتمدی</td>
+                                    <td>طراح ارشد بازاریابی</td>
+                                    <td>ایده پردازان</td>
+                                    <td>43</td>
+                                   <td>09/10/97</td>
+                                    <td>385،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">فاطمه حسینی</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>ایده پردازان</td>
+                                    <td>30</td>
+                                    <td>02/10/97</td>
+                                    <td>385،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">فاطمه خانی</td>
+                                    <td>نویسنده فنی جوان</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>66</td>
+                                    <td>12/01/97</td>
+                                    <td>86،000 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">فاطمه زالی</td>
+                                    <td>معاون فروش</td>
+                                    <td>ایده پرداز</td>
+                                    <td>46</td>
+                                    <td>23/05/95</td>
+                                    <td>145،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">فریبا خانی</td>
+                                    <td>پشتیبانی وب</td>
+                                    <td>ایده پرداز</td>
+                                    <td>22</td>
+                                    <td>09/10/97</td>
+                                   <td>385،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">لیدا کبیری</td>
+                                    <td>مهندس پشتیبانی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>64</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">مائده مولایی</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پردازان</td>
+                                    <td>41</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">محسن پناهی</td>
+                                    <td>توسعه دهنده جاوااسکریپت</td>
+                                    <td>ایده پرداز</td>
+                                    <td>43</td>
+                                    <td>23/05/95</td>
+                                   <td>145،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">محمد محمدی</td>
+                                    <td>مدیر ارشد مالی</td>
+                                    <td>ایده پرداز</td>
+                                    <td>64</td>
+                                    <td>09/06/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">مسعود جهانی</td>
+                                    <td>طراح بازاریابی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>47</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">مسعود حیدری</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>28</td>
+                                   <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">مسعود ملاحسینی</td>
+                                    <td>توسعه دهنده وب</td>
+                                    <td>ایده پرداز</td>
+                                    <td>30</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">مطهره لولو</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>ایده پردازان</td>
+                                    <td>53</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">معصومه غلامی</td>
+                                    <td>مدیر سیستم</td>
+                                    <td>ایده پرداز</td>
+                                    <td>59</td>
+                                    <td>09/06/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">مهدی یراحی</td>
+                                    <td>تیم وب</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>22</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">مینا شجری</td>
+                                    <td>متخصص ادغام</td>
+                                    <td>برق</td>
+                                    <td>37</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">مینا شجری</td>
+                                    <td>پشتیبان مشتری</td>
+                                    <td>ایده پرداز</td>
+                                    <td>27</td>
+                                    <td>25/01/97</td>
+                                    <td>112،000 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">هاله بابایی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پرداز</td>
+                                    <td>51</td>
+                                    <td>23/05/95</td>
+                                    <td>112،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">پناه حسنی</td>
+                                    <td>دبیر</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>41</td>
+                                   <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">پوران مفتخر</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پرداز</td>
+                                    <td>63</td>
+                                    <td>23/05/95</td>
+                                    <td>145،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">کاظم یعقوبی</td>
+                                    <td>مهندس پشتیبانی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>47</td>
+                                   <td>17/05/95</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">کامران احمدی</td>
+                                    <td>توسعه دهنده جاوااسکریپت</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>39</td>
+                                    <td>02/10/97</td>
+                                   <td>103،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">کبری چمنی</td>
+                                    <td>کارگردان</td>
+                                    <td>ایده پرداز</td>
+                                    <td>65</td>
+                                    <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">کوروش حسینی</td>
+                                    <td>پشتیبانی پیش فروش</td>
+                                    <td>ایده پرداز</td>
+                                    <td>21</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">کوروش زمانی</td>
+                                    <td>توسعه دهنده جاوااسکریپت</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>29</td>
+                                    <td>27/06/95</td>
+                                    <td>112،000 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">کیمیا سعیدی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>28</td>
+                                    <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">گیتی خانی</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>ایده پرداز</td>
+                                    <td>42</td>
+                                    <td>12/08/97</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">یاسر خیابانی</td>
+                                    <td>افسر ارشد بازاریابی</td>
+                                    <td>ایده پرداز</td>
+                                    <td>40</td>
+                                    <td>12/08/97</td>
+                                    <td>85،600 تومان</td>
+                                </tr></tbody>
+
+                        </table></div><div class="dataTables_scrollFoot" style="overflow: hidden; border: 0px; width: 100%;"><div class="dataTables_scrollFootInner" style="width: 1114.4px; padding-left: 17px;"><table class="table table-striped table-bordered dynamic-height dataTable" role="grid" style="margin-left: 0px; width: 1114.4px;"><tfoot>
+                                <tr><th rowspan="1" colspan="1" style="width: 171.387px;">نام</th><th rowspan="1" colspan="1" style="width: 304.562px;">موقعیت</th><th rowspan="1" colspan="1" style="width: 120.65px;">اداره</th><th rowspan="1" colspan="1" style="width: 73.95px;">سن</th><th rowspan="1" colspan="1" style="width: 134.7px;">تاریخ شروع</th><th rowspan="1" colspan="1" style="width: 148.35px;">حقوق</th></tr>
+                            </tfoot></table></div></div></div></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_7_info" role="status" aria-live="polite">نمایش 1 تا 57 از 57 سطرها</div></div><div class="col-sm-12 col-md-7"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Scroll - vertical, dynamic height table -->
+<!-- Scroll - horizontal table -->
+<section id="horizontal">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-danger">
+                        <h4 class="card-title">رفته - افقی</h4>
+                    </div>
+                </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                        <p class="card-text">Scroll - جداول داده افقی دارای توانایی نمایش دادن جداول با پیمایش افقی است که برای زمانی که شما یک جدول گسترده دارید، بسیار مفید است، اما می خواهید آن را محدود به یک منطقه نمایش افقی محدود کنید. برای فعال کردن اسکرول کردن، تنظیم پارامتر scrollX را به همان ترتیب که می خواهید عرض پانل بسته بندی را تعیین کنید (این باید در تقریبا در همه موارد با عرض باشد که توسط عنصر کانال محدود می شود).</p>
+                        <div id="DataTables_Table_8_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_8_length"><label>نمایش <select name="DataTables_Table_8_length" aria-controls="DataTables_Table_8" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> سطر</label></div></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_8_filter" class="dataTables_filter"><label>جستجو:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_8"></label></div></div></div><div class="row"><div class="col-sm-12"><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 1075px; padding-left: 0px;"><table class="table display nowrap table-striped table-bordered scroll-horizontal dataTable no-footer" role="grid" style="margin-left: 0px; width: 1075px;"><thead>
+                                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 42.0875px;" aria-sort="ascending" aria-label="نام: activate to sort column descending">نام</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 77.0875px;" aria-label="نام خانوادگی: activate to sort column ascending">نام خانوادگی</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 161.438px;" aria-label="موقعیت: activate to sort column ascending">موقعیت</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 54.1875px;" aria-label="اداره: activate to sort column ascending">اداره</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 23.1px;" aria-label="سن: activate to sort column ascending">سن</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 64.05px;" aria-label="تاریخ شروع: activate to sort column ascending">تاریخ شروع</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 73.0125px;" aria-label="حقوق: activate to sort column ascending">حقوق</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 35.1375px;" aria-label="شماره: activate to sort column ascending">شماره</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 142.9px;" aria-label="ایمیل: activate to sort column ascending">ایمیل</th></tr>
+                            </thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%;"><table class="table display nowrap table-striped table-bordered scroll-horizontal dataTable no-footer" id="DataTables_Table_8" role="grid" aria-describedby="DataTables_Table_8_info" style="width: 1075px;"><thead>
+                                <tr role="row" style="height: 0px;"><th class="sorting_asc" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 42.0875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-sort="ascending" aria-label="نام: activate to sort column descending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">نام</div></th><th class="sorting" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 77.0875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="نام خانوادگی: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">نام خانوادگی</div></th><th class="sorting" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 161.438px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="موقعیت: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">موقعیت</div></th><th class="sorting" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 54.1875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="اداره: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">اداره</div></th><th class="sorting" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 23.1px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="سن: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">سن</div></th><th class="sorting" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 64.05px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="تاریخ شروع: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">تاریخ شروع</div></th><th class="sorting" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 73.0125px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="حقوق: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">حقوق</div></th><th class="sorting" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 35.1375px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="شماره: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">شماره</div></th><th class="sorting" aria-controls="DataTables_Table_8" rowspan="1" colspan="1" style="width: 142.9px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="ایمیل: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">ایمیل</div></th></tr>
+                            </thead>
+
+                            <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <tr role="row" class="odd">
+                                    <td class="sorting_1">Olivia</td>
+                                    <td>طاهری</td>
+                                    <td>مهندس پشتیبانی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>64</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                    <td>2120</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">آهو</td>
+                                    <td>حمیدی</td>
+                                    <td>مدیر سیستم</td>
+                                    <td>ایده پرداز</td>
+                                    <td>59</td>
+                                    <td>09/06/97</td>
+                                    <td>85،600 تومان</td>
+                                    <td>1721</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">اصغر</td>
+                                    <td>حسینی </td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پرداز</td>
+                                    <td>63</td>
+                                    <td>23/05/95</td>
+                                    <td>145،600 تومان</td>
+                                    <td>7439</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">امید</td>
+                                    <td>نجفی</td>
+                                    <td>متخصص ادغام</td>
+                                    <td>ایده پرداز</td>
+                                    <td>61</td>
+                                    <td>02/12/97</td>
+                                    <td>372،000 تومان</td>
+                                    <td>4804</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">امیر مهدی</td>
+                                    <td>راست کردار</td>
+                                    <td>مدیر عامل</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>48</td>
+                                    <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                    <td>2947</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">جلال</td>
+                                    <td>وزیری</td>
+                                    <td>طراح ارشد بازاریابی</td>
+                                    <td>ایده پردازان</td>
+                                    <td>43</td>
+                                   <td>09/10/97</td>
+                                    <td>385،750 تومان</td>
+                                    <td>3597</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">جواد</td>
+                                    <td>حسنی کیا</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td>33</td>
+                                    <td>28/11/97</td>
+                                    <td>162،700 تومان</td>
+                                    <td>5407</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">حانیه</td>
+                                    <td>حسنی کیا</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td>63</td>
+                                    <td>25/07/97</td>
+                                    <td>170،750 تومان</td>
+                                    <td>8422</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">حبیب</td>
+                                    <td>علی پور</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>28</td>
+                                   <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                    <td>1314</td>
+                                   <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">حسن</td>
+                                    <td>بابایی</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>ایده پردازان</td>
+                                    <td>30</td>
+                                    <td>02/10/97</td>
+                                    <td>385،750 تومان</td>
+                                    <td>3814</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr></tbody>
+                        </table></div></div></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_8_info" role="status" aria-live="polite">نمایش 1 تا 10 از 57 سطرها</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_8_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_8_previous"><a href="#" aria-controls="DataTables_Table_8" data-dt-idx="0" tabindex="0" class="page-link">قبلی</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_8" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_8" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_8" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_8" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_8" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_8" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="DataTables_Table_8_next"><a href="#" aria-controls="DataTables_Table_8" data-dt-idx="7" tabindex="0" class="page-link">بعدی</a></li></ul></div></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Scroll - horizontal table -->
+<!-- Scroll - horizontal and vertical table -->
+<section id="horizontal-vertical">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-primary">
+                        <h4 class="card-title">رفته - افقی و عمودی</h4>
+                    </div>
+                </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                        <p class="card-text">در این مثال شما می توانید جدول داده ها را به صورت همزمان در هر دو پیمایش افقی و عمودی مشاهده کنید. همچنین توجه داشته باشید که صفحه بندی در این مثال فعال شده است و حساب های پیمایش برای این.</p>
+                        <div id="DataTables_Table_9_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_9_length"><label>نمایش <select name="DataTables_Table_9_length" aria-controls="DataTables_Table_9" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> سطر</label></div></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_9_filter" class="dataTables_filter"><label>جستجو:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_9"></label></div></div></div><div class="row"><div class="col-sm-12"><div class="dataTables_scroll"><div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border: 0px; width: 100%;"><div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 1075px; padding-left: 17px;"><table class="table display nowrap table-striped table-bordered scroll-horizontal-vertical dataTable no-footer" role="grid" style="margin-left: 0px; width: 1075px;"><thead>
+                                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 42.0875px;" aria-sort="ascending" aria-label="نام: activate to sort column descending">نام</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 77.0875px;" aria-label="نام خانوادگی: activate to sort column ascending">نام خانوادگی</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 161.438px;" aria-label="موقعیت: activate to sort column ascending">موقعیت</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 54.1875px;" aria-label="اداره: activate to sort column ascending">اداره</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 23.1px;" aria-label="سن: activate to sort column ascending">سن</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 64.05px;" aria-label="تاریخ شروع: activate to sort column ascending">تاریخ شروع</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 73.0125px;" aria-label="حقوق: activate to sort column ascending">حقوق</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 35.1375px;" aria-label="شماره: activate to sort column ascending">شماره</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 142.9px;" aria-label="ایمیل: activate to sort column ascending">ایمیل</th></tr>
+                            </thead></table></div></div><div class="dataTables_scrollBody" style="position: relative; overflow: auto; width: 100%; height: 200px;"><table class="table display nowrap table-striped table-bordered scroll-horizontal-vertical dataTable no-footer" id="DataTables_Table_9" role="grid" aria-describedby="DataTables_Table_9_info" style="width: 1075px;"><thead>
+                                <tr role="row" style="height: 0px;"><th class="sorting_asc" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 42.0875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-sort="ascending" aria-label="نام: activate to sort column descending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">نام</div></th><th class="sorting" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 77.0875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="نام خانوادگی: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">نام خانوادگی</div></th><th class="sorting" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 161.438px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="موقعیت: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">موقعیت</div></th><th class="sorting" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 54.1875px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="اداره: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">اداره</div></th><th class="sorting" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 23.1px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="سن: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">سن</div></th><th class="sorting" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 64.05px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="تاریخ شروع: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">تاریخ شروع</div></th><th class="sorting" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 73.0125px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="حقوق: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">حقوق</div></th><th class="sorting" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 35.1375px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="شماره: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">شماره</div></th><th class="sorting" aria-controls="DataTables_Table_9" rowspan="1" colspan="1" style="width: 142.9px; padding-top: 0px; padding-bottom: 0px; border-top-width: 0px; border-bottom-width: 0px; height: 0px;" aria-label="ایمیل: activate to sort column ascending"><div class="dataTables_sizing" style="height:0;overflow:hidden;">ایمیل</div></th></tr>
+                            </thead>
+
+                            <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <tr role="row" class="odd">
+                                    <td class="sorting_1">Olivia</td>
+                                    <td>طاهری</td>
+                                    <td>مهندس پشتیبانی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>64</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                    <td>2120</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">آهو</td>
+                                    <td>حمیدی</td>
+                                    <td>مدیر سیستم</td>
+                                    <td>ایده پرداز</td>
+                                    <td>59</td>
+                                    <td>09/06/97</td>
+                                    <td>85،600 تومان</td>
+                                    <td>1721</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">اصغر</td>
+                                    <td>حسینی </td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پرداز</td>
+                                    <td>63</td>
+                                    <td>23/05/95</td>
+                                    <td>145،600 تومان</td>
+                                    <td>7439</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">امید</td>
+                                    <td>نجفی</td>
+                                    <td>متخصص ادغام</td>
+                                    <td>ایده پرداز</td>
+                                    <td>61</td>
+                                    <td>02/12/97</td>
+                                    <td>372،000 تومان</td>
+                                    <td>4804</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">امیر مهدی</td>
+                                    <td>راست کردار</td>
+                                    <td>مدیر عامل</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>48</td>
+                                    <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                    <td>2947</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">جلال</td>
+                                    <td>وزیری</td>
+                                    <td>طراح ارشد بازاریابی</td>
+                                    <td>ایده پردازان</td>
+                                    <td>43</td>
+                                   <td>09/10/97</td>
+                                    <td>385،750 تومان</td>
+                                    <td>3597</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">جواد</td>
+                                    <td>حسنی کیا</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td>33</td>
+                                    <td>28/11/97</td>
+                                    <td>162،700 تومان</td>
+                                    <td>5407</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">حانیه</td>
+                                    <td>حسنی کیا</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td>63</td>
+                                    <td>25/07/97</td>
+                                    <td>170،750 تومان</td>
+                                    <td>8422</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">حبیب</td>
+                                    <td>علی پور</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>28</td>
+                                   <td>12/08/96</td>
+                                    <td>163،000 تومان</td>
+                                    <td>1314</td>
+                                   <td>fkazemi5236@gmail.com</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">حسن</td>
+                                    <td>بابایی</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>ایده پردازان</td>
+                                    <td>30</td>
+                                    <td>02/10/97</td>
+                                    <td>385،750 تومان</td>
+                                    <td>3814</td>
+                                    <td>fkazemi5236@gmail.com</td>
+                                </tr></tbody>
+                        </table></div></div></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_9_info" role="status" aria-live="polite">نمایش 1 تا 10 از 57 سطرها</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_9_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_9_previous"><a href="#" aria-controls="DataTables_Table_9" data-dt-idx="0" tabindex="0" class="page-link">قبلی</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_9" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_9" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_9" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_9" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_9" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_9" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="DataTables_Table_9_next"><a href="#" aria-controls="DataTables_Table_9" data-dt-idx="7" tabindex="0" class="page-link">بعدی</a></li></ul></div></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Scroll - horizontal and vertical table -->
+<!-- Language - Comma decimal place table -->
+<section id="decimal">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-title-wrap bar-success">
+                        <h4 class="card-title">زبان - مکان دهدهی کمری</h4>
+                    </div>
+                </div>
+                <div class="card-body collapse show">
+                    <div class="card-block card-dashboard">
+                        <p class="card-text">یک نقطه (.) برای علامت مکان اعشاری در جاوا اسکریپت استفاده می شود، اما بسیاری از نقاط جهان از کاما (،) و کاراکترهای دیگر مانند جداکننده اعشاری یوکوئید (⎖) یا یک خط تیره (-) اغلب استفاده می شود عدد اعشاری را در یک عدد نشان داده شده نشان می دهد.</p>
+                        <div id="DataTables_Table_10_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="DataTables_Table_10_length"><label>نمایش <select name="DataTables_Table_10_length" aria-controls="DataTables_Table_10" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> سطر</label></div></div><div class="col-sm-12 col-md-6"><div id="DataTables_Table_10_filter" class="dataTables_filter"><label>جستجو:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="DataTables_Table_10"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-striped table-bordered comma-decimal-place dataTable" id="DataTables_Table_10" role="grid" aria-describedby="DataTables_Table_10_info">
+                            <thead>
+                                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_10" rowspan="1" colspan="1" aria-sort="ascending" aria-label="نام: activate to sort column descending" style="width: 156.913px;">نام</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_10" rowspan="1" colspan="1" aria-label="موقعیت: activate to sort column ascending" style="width: 292.775px;">موقعیت</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_10" rowspan="1" colspan="1" aria-label="اداره: activate to sort column ascending" style="width: 104.525px;">اداره</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_10" rowspan="1" colspan="1" aria-label="سن: activate to sort column ascending" style="width: 56.7625px;">سن</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_10" rowspan="1" colspan="1" aria-label="تاریخ شروع: activate to sort column ascending" style="width: 118.613px;">تاریخ شروع</th><th class="sorting" tabindex="0" aria-controls="DataTables_Table_10" rowspan="1" colspan="1" aria-label="حقوق: activate to sort column ascending" style="width: 132.812px;">حقوق</th></tr>
+                            </thead>
+                            <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <tr role="row" class="odd">
+                                    <td class="sorting_1">آرتین علیزاده</td>
+                                    <td>مدیر دفتر</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>51</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">احمد احمدی</td>
+                                    <td>حسابدار</td>
+                                    <td>سونی</td>
+                                    <td>63</td>
+                                    <td>25/07/97</td>
+                                    <td>170،750 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">احمد وزیری</td>
+                                    <td>مدیر اجرایی (مدیر عامل)</td>
+                                    <td>ایده پردازان</td>
+                                    <td>47</td>
+                                    <td>12/08/97</td>
+                                    <td>163،000 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">تینا زینلی</td>
+                                    <td>توسعه دهنده</td>
+                                    <td>ایده پرداز</td>
+                                    <td>61</td>
+                                    <td>17/05/95</td>
+                                    <td>87،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">حسن معجونی</td>
+                                    <td>کنترل مالی</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>62</td>
+                                   <td>17/05/96</td>
+                                    <td>645،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">حمید زمانی</td>
+                                    <td>معاون فروش</td>
+                                    <td>روزنامه جوان</td>
+                                    <td>59</td>
+                                    <td>02/12/97</td>
+                                    <td>103،600 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">خسرو غفاری</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پردازان</td>
+                                    <td>19</td>
+                                   <td>09/06/97</td>
+                                    <td>385،750 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمدی</td>
+                                    <td>مدیر منطقه</td>
+                                    <td>ایده پردازان</td>
+                                    <td>47</td>
+                                    <td>23/05/95</td>
+                                    <td>86،500 تومان</td>
+                                </tr><tr role="row" class="odd">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>نویسنده فنی</td>
+                                    <td>ایده پردازان</td>
+                                    <td>27</td>
+                                    <td>17/01/96</td>
+                                    <td>164،500 تومان</td>
+                                </tr><tr role="row" class="even">
+                                    <td class="sorting_1">رضا محمودی</td>
+                                    <td>مهندس نرم افزار</td>
+                                    <td>ایده پردازان</td>
+                                    <td>38</td>
+                                    <td>17/05/96</td>
+                                    <td>87،500 تومان</td>
+                                </tr></tbody>
+                            <tfoot>
+                                <tr><th rowspan="1" colspan="1">نام</th><th rowspan="1" colspan="1">موقعیت</th><th rowspan="1" colspan="1">اداره</th><th rowspan="1" colspan="1">سن</th><th rowspan="1" colspan="1">تاریخ شروع</th><th rowspan="1" colspan="1">حقوق</th></tr>
+                            </tfoot>
+                        </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="DataTables_Table_10_info" role="status" aria-live="polite">نمایش 1 تا 10 از 57 سطرها</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_10_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="DataTables_Table_10_previous"><a href="#" aria-controls="DataTables_Table_10" data-dt-idx="0" tabindex="0" class="page-link">قبلی</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_10" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_10" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_10" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_10" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_10" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_10" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="DataTables_Table_10_next"><a href="#" aria-controls="DataTables_Table_10" data-dt-idx="7" tabindex="0" class="page-link">بعدی</a></li></ul></div></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Language - Comma decimal place table -->
+
+            </div>
+          </div>
 

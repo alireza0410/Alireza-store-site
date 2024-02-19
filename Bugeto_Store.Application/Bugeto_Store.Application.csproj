@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Bugeto_Store.Common\Bugeto_Store.Common.csproj" />
     <ProjectReference Include="..\Bugeto_Store.Domain\Bugeto_Store.Domain.csproj" />
   </ItemGroup>
 
