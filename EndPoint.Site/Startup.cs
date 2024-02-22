@@ -12,6 +12,9 @@ using Microsoft.EntityFrameworkCore;
 using Bugeto_Store.Persistence.Contexts;
 using Bugeto_Store.Application.Interfaces.Contexts;
 using Bugeto_Store.Application.Services.Users.Queries.GetUsers;
+using Bugeto_Store.Application.Services.Users.Queries.GetRoles;
+using Microsoft.EntityFrameworkCore.Internal;
+using Bugeto_Store.Application.Services.Users.Commands.RgegisterUser;
 
 namespace EndPoint.Site
 {
@@ -30,6 +33,8 @@ namespace EndPoint.Site
 
             services.AddScoped<IDataBaseContext, DataBaseContext>();
             services.AddScoped<IGetUsersService, GetUsersService>();
+            services.AddScoped<IGetRolesService, GetRolesService>();
+            services.AddScoped<IRegisterUserService, RgegisterUserService>();
 
             string contectionString = @"Data Source=.; Initial Catalog=AlirezaStoreDb; Integrated Security=True;";
             services.AddEntityFrameworkSqlServer().AddDbContext<DataBaseContext>(option => option.UseSqlServer(contectionString));
