@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bugeto_Store.Application.Services.Users.Commands.RemoveUser;
 using Bugeto_Store.Application.Services.Users.Commands.RgegisterUser;
+using Bugeto_Store.Application.Services.Users.Commands.UserSatusChange;
 using Bugeto_Store.Application.Services.Users.Queries.GetRoles;
 using Bugeto_Store.Application.Services.Users.Queries.GetUsers;
 using Microsoft.AspNetCore.Mvc;
@@ -16,18 +18,25 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         private readonly IGetUsersService _getUsersService;
         private readonly IGetRolesService _getRolesService;
         private readonly IRegisterUserService _RegisterUserService;
-      
+        private readonly IRemoveUserService _RemoveUserService;
+        private readonly IUserSatusChangeService _userSatusChangeService;
+
         public UsersController(
             IGetUsersService getUsersService,
             IGetRolesService getRolesService, 
-            IRegisterUserService registeredServices)
+            IRegisterUserService registeredServices,
+            IRemoveUserService removeUserService,
+            IUserSatusChangeService userSatusChangeService)
         {
             _getUsersService = getUsersService;
             _getRolesService = getRolesService;
             _RegisterUserService = registeredServices;
+            _RemoveUserService = removeUserService;
+            _userSatusChangeService = userSatusChangeService;
+
         }
 
-      
+
         public IActionResult Index( string searchkey,int page=1)
         {
             return View(_getUsersService.Execute(new RequestGetUserDto
@@ -63,5 +72,26 @@ namespace EndPoint.Site.Areas.Admin.Controllers
             
             
         }
+        [HttpPost]
+        public IActionResult Delete(long UserId)
+        {
+            return Json(_RemoveUserService.Execute(UserId));
+        }
+
+        [HttpPost]
+        public IActionResult UserSatusChange(long UserId)
+        {
+            return Json(_userSatusChangeService.Execute(UserId));
+        }
+
+        //[HttpPost]
+        //public IActionResult Edit(long UserId, string Fullname)
+        //{
+        //    return Json(_editUserService.Execute(new RequestEdituserDto
+        //    {
+        //        Fullname = Fullname,
+        //        UserId = UserId,
+        //    }));
     }
 }
+
