@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bugeto_Store.Application.Services.Users.Commands.EditUser;
 using Bugeto_Store.Application.Services.Users.Commands.RemoveUser;
 using Bugeto_Store.Application.Services.Users.Commands.RgegisterUser;
 using Bugeto_Store.Application.Services.Users.Commands.UserSatusChange;
@@ -20,19 +21,23 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         private readonly IRegisterUserService _RegisterUserService;
         private readonly IRemoveUserService _RemoveUserService;
         private readonly IUserSatusChangeService _userSatusChangeService;
+        private readonly IEditUserService _editUserService;
+
 
         public UsersController(
             IGetUsersService getUsersService,
             IGetRolesService getRolesService, 
             IRegisterUserService registeredServices,
             IRemoveUserService removeUserService,
-            IUserSatusChangeService userSatusChangeService)
+            IUserSatusChangeService userSatusChangeService,
+            IEditUserService editUserService)
         {
             _getUsersService = getUsersService;
             _getRolesService = getRolesService;
             _RegisterUserService = registeredServices;
             _RemoveUserService = removeUserService;
             _userSatusChangeService = userSatusChangeService;
+            _editUserService = editUserService;
 
         }
 
@@ -84,14 +89,15 @@ namespace EndPoint.Site.Areas.Admin.Controllers
             return Json(_userSatusChangeService.Execute(UserId));
         }
 
-        //[HttpPost]
-        //public IActionResult Edit(long UserId, string Fullname)
-        //{
-        //    return Json(_editUserService.Execute(new RequestEdituserDto
-        //    {
-        //        Fullname = Fullname,
-        //        UserId = UserId,
-        //    }));
+        [HttpPost]
+        public IActionResult Edit(long UserId, string Fullname)
+        {
+            return Json(_editUserService.Execute(new RequestEdituserDto
+            {
+                Fullname = Fullname,
+                UserId = UserId,
+            }));
+        }
     }
 }
 

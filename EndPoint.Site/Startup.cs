@@ -17,6 +17,7 @@ using Microsoft.EntityFrameworkCore.Internal;
 using Bugeto_Store.Application.Services.Users.Commands.RgegisterUser;
 using Bugeto_Store.Application.Services.Users.Commands.RemoveUser;
 using Bugeto_Store.Application.Services.Users.Commands.UserSatusChange;
+using Bugeto_Store.Application.Services.Users.Commands.EditUser;
 
 namespace EndPoint.Site
 {
@@ -39,6 +40,8 @@ namespace EndPoint.Site
             services.AddScoped<IRegisterUserService, RgegisterUserService>();
             services.AddScoped<IRemoveUserService, RemoveUserService>();
             services.AddScoped<IUserSatusChangeService, UserSatusChangeService>();
+            services.AddScoped<IEditUserService, EditUserService>();
+
 
             string contectionString = @"Data Source=.; Initial Catalog=AlirezaStoreDb; Integrated Security=True;";
             services.AddEntityFrameworkSqlServer().AddDbContext<DataBaseContext>(option => option.UseSqlServer(contectionString));
