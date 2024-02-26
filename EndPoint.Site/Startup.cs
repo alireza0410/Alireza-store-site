@@ -23,6 +23,8 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Http;
 using Bugeto_Store.Application.Services.Users.Commands.UserLogin;
+using Bugeto_Store.Application.Interfaces.FacadPatterns;
+using Bugeto_Store.Application.Services.Products.FacadPattern;
 
 namespace EndPoint.Site
 {
@@ -61,6 +63,8 @@ namespace EndPoint.Site
             services.AddScoped<IEditUserService, EditUserService>();
             services.AddScoped<IUserLoginService, UserLoginService>();
 
+            //FacadeInject
+            services.AddScoped<IProductFacad, ProductFacad>();
 
 
             string contectionString = @"Data Source=.; Initial Catalog=AlirezaStoreDb; Integrated Security=True;";
