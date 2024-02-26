@@ -18,6 +18,11 @@ using Bugeto_Store.Application.Services.Users.Commands.RgegisterUser;
 using Bugeto_Store.Application.Services.Users.Commands.RemoveUser;
 using Bugeto_Store.Application.Services.Users.Commands.UserSatusChange;
 using Bugeto_Store.Application.Services.Users.Commands.EditUser;
+using Microsoft.CodeAnalysis.Options;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.Extensions.Options;
+using Microsoft.AspNetCore.Http;
+using Bugeto_Store.Application.Services.Users.Commands.UserLogin;
 
 namespace EndPoint.Site
 {
@@ -33,6 +38,19 @@ namespace EndPoint.Site
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAuthentication(options =>
+            {
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+            }).AddCookie(options =>
+            {
+                options.LoginPath = new PathString("/");
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(5.0);
+            });
+
+
+
 
             services.AddScoped<IDataBaseContext, DataBaseContext>();
             services.AddScoped<IGetUsersService, GetUsersService>();
@@ -41,6 +59,8 @@ namespace EndPoint.Site
             services.AddScoped<IRemoveUserService, RemoveUserService>();
             services.AddScoped<IUserSatusChangeService, UserSatusChangeService>();
             services.AddScoped<IEditUserService, EditUserService>();
+            services.AddScoped<IUserLoginService, UserLoginService>();
+
 
 
             string contectionString = @"Data Source=.; Initial Catalog=AlirezaStoreDb; Integrated Security=True;";
@@ -67,7 +87,7 @@ namespace EndPoint.Site
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseAuthentication();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
