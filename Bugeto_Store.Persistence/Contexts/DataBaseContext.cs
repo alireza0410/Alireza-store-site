@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Bugeto_Store.Persistence.Contexts
 {
-    public class DataBaseContext : DbContext, IDataBaseContext
+    public class DataBaseContext : DbContext,IDataBaseContext
     {
         public DataBaseContext(DbContextOptions options) : base(options)
         {
@@ -21,6 +21,9 @@ namespace Bugeto_Store.Persistence.Contexts
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserInRole> UserInRoles { get; set; }
         public DbSet<Category> categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductImages> ProductImages { get; set; }
+        public DbSet<ProductFeatures> ProductFeatures { get; set; }
         protected  override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
