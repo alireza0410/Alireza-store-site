@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30128.74
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{49D2E88B-5488-4CE2-A946-D39CE60D33DC}"
 EndProject
@@ -27,7 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bugeto_Store.Persistence", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bugeto_Store.Common", "Bugeto_Store.Common\Bugeto_Store.Common.csproj", "{72FD7E9B-097C-430E-B831-329095E02244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EndPoint.Site", "EndPoint.Site\EndPoint.Site.csproj", "{030DDC51-0969-4855-BBF6-E1BC9C9D0908}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EndPoint.Site", "EndPoint.Site\EndPoint.Site.csproj", "{030DDC51-0969-4855-BBF6-E1BC9C9D0908}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +64,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{4E3FF540-B93D-407D-B148-03838234AEE1} = {78B62EEF-D61B-4AF0-9F5A-083022FF5707}
 		{BF29137B-074A-43BF-BAF1-E077E5322240} = {B9245359-E0DB-4B95-B5FA-0A2A1FECDD5F}
 		{616B6632-B4F0-4505-A86A-BB3B4AB060FC} = {B9245359-E0DB-4B95-B5FA-0A2A1FECDD5F}
 		{78B62EEF-D61B-4AF0-9F5A-083022FF5707} = {B9245359-E0DB-4B95-B5FA-0A2A1FECDD5F}

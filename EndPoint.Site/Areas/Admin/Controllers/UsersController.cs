@@ -42,12 +42,12 @@ namespace EndPoint.Site.Areas.Admin.Controllers
         }
 
 
-        public IActionResult Index( string searchkey,int page=1)
+        public IActionResult Index( string searchkey, int page=1)
         {
             return View(_getUsersService.Execute(new RequestGetUserDto
             {
                 Page=page,
-                SearchKey=searchkey
+                SearchKey= searchkey
             }));
         }
         [HttpGet ]

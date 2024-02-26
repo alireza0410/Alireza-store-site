@@ -1,8 +1,10 @@
 ﻿using Bugeto_Store.Application.Interfaces.Contexts;
+using Bugeto_Store.Common;
 using Bugeto_Store.Common.Dto;
 using Bugeto_Store.Domain.Entities.Users;
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace Bugeto_Store.Application.Services.Users.Commands.RgegisterUser
 {
@@ -72,12 +74,32 @@ namespace Bugeto_Store.Application.Services.Users.Commands.RgegisterUser
                         Message = "رمز عبور و تکرار آن برابر نیست"
                     };
                 }
+                string emailRegex = @"^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9.-]+\.[A-Z]{2,}$";
+
+                var match = Regex.Match(request.Email, emailRegex, RegexOptions.IgnoreCase);
+                if (!match.Success)
+                {
+                    return new ResultDto<ResultRgegisterUserDto>()
+                    {
+                        Data = new ResultRgegisterUserDto()
+                        {
+                            UserId = 0,
+                        },
+                        IsSuccess = false,
+                        Message = "ایمیل خودرا به درستی وارد نمایید"
+                    };
+                }
+
+
+                var passwordHasher = new PasswordHasher();
+                var hashedPassword = passwordHasher.HashPassword(request.Password);
 
                 User user = new User()
                 {
                     Email = request.Email,
                     FullName = request.FullName,
-                    //Password = HashPassword.Execute(request.Password),
+                    Password = hashedPassword,
+                    IsActive = true,
                 };
 
                 List<UserInRole> userInRoles = new List<UserInRole>();
