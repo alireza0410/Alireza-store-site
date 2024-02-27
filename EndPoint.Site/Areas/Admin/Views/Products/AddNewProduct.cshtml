@@ -1,4 +1,5 @@
-﻿
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
 @{
     ViewData["Title"] = "AddNewProduct";
     Layout = "~/Areas/Admin/Views/Shared/_Adminlayout.cshtml";
@@ -236,7 +237,7 @@
                             data.message,
                             'success'
                         ).then(function (isConfirm) {
-                            window.location.href = "/Admin/Products/";
+                            window.location.href = "/Admin/Products/AddNewProduct;
 
                         });
                     }
